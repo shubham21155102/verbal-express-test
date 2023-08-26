@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 const data=require("./questions")
 const app = express();
 const cors=require("cors")
-app.use(cors)
+app.use(cors())
 app.get('/quiz', (req, res) => {
     res.json(data);
     // const filePath = "questions.json";
